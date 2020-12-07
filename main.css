@@ -140,6 +140,7 @@ h2 {
     cursor: pointer;
     position: relative;
     width: 100%;
+    outline: none;
 }
 
 .setting> span {
