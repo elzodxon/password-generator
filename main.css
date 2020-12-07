@@ -221,6 +221,10 @@ label{
     .settings-right__img{
         right: -10px !important;
     }
+
+    .btn-large{
+        margin: 32px 90px;
+    }
 }
 
 .clip::after {
