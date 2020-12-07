@@ -26,15 +26,19 @@ clipboard.addEventListener('click', () => {
     textarea.remove();
 });
 
-
 generate.addEventListener('click', () => {
-    const length = +lengthEl.value;
+    const length = lengthEl.value;
+    if (lengthEl.value < 8 || lengthEl.value > 15){
+        lengthEl.value = 8
+    }
 
     if (length < 8) {
         alert('Minimum 8raqamini kiritishingiz mumkin')
+        lengthEl.value === 8
         return
     } else if (length > 15){
         alert('Maxium 15gacha kiritishingiz mumkin')
+        lengthEl.value === 15
         return
     }
     const hasLower = lowercaseEl.checked;
