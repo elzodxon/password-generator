@@ -19,7 +19,7 @@
     <div class="wrapper">
         <div class="result-container">
             <span id="result"></span>
-            <button class="btn" id="clipboard">
+            <button class="btn clip" id="clipboard" data-title="Ready to go!">
                 Copy
             </button>
         </div>
@@ -36,23 +36,39 @@
                 <div class="setting" style="width: 50%">
                     <label style="font-size: 17px; font-weight: 700">Length</label>
                     <span style="padding: 0px 13px">|</span>
-                    <input type="number" id="length" min='8' max='15' value='8'
+                    <input type="number" id="length" min='8' max='15'  value='8'
                            style="text-align: center; font-size: 18px; font-weight: 700; color: #615D8F; width: 58px; height: 34px; background: #C4C4C4;border: none; outline: none; border-radius: 3px; "/>
                 </div>
                 <label class="setting">
                     <input class="setting-input" type="checkbox" id="uppercase" checked/>
+                    <svg style="position: absolute; left: 6px" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 7L6.5 12L17.5 2" stroke="white" stroke-width="4"/>
+                    </svg>
+
                     <span>Uppercase alphabets</span>
                 </label>
                 <label class="setting">
                     <input class="setting-input" type="checkbox" id="lowercase"/>
+                    <svg style="position: absolute; left: 6px" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 7L6.5 12L17.5 2" stroke="white" stroke-width="4"/>
+                    </svg>
+
                     <span>Lowercase alphabets</span>
                 </label>
                 <label class="setting" id="numbers">
                     <input class="setting-input" type="checkbox"/>
+                    <svg style="position: absolute; left: 6px" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 7L6.5 12L17.5 2" stroke="white" stroke-width="4"/>
+                    </svg>
+
                     <span>Numbers</span>
                 </label>
                 <label class="setting">
                     <input class="setting-input" type="checkbox" id="symbols"/>
+                    <svg style="position: absolute; left: 6px" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 7L6.5 12L17.5 2" stroke="white" stroke-width="4"/>
+                    </svg>
+
                     <span>Symbols</span>
                 </label>
             </div>

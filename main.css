@@ -170,7 +170,7 @@ h2 {
 }
 
 .setting > input:checked + span::before {
-    content: '✅';
+    content: '';
     display: block;
     text-align: center;
     color: #FFFFFF;
@@ -205,5 +205,30 @@ label{
     .result-container {
         font-size: 14px;
     }
+}
+
+.clip::after {
+    display: none;
+    margin-left: 10px;
+    content: attr(data-title);
+    top: -45%;
+    right: 10%;
+    padding: 10px;
+    position: absolute;
+    border: none;
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    transform: translatey(-50%);
+    font-size: 18px;
+    width: 125px;
+    color: #615D8F;
+    background: #D9D6ED;
+}
+.clip:hover {
+    cursor: pointer;
+}
+.clip:hover::after {
+    display:inline-block;
 }
 

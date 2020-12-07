@@ -6,7 +6,6 @@ const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
-
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
@@ -25,7 +24,6 @@ clipboard.addEventListener('click', () => {
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
-    alert('Password copied to clipboard');
 });
 
 generate.addEventListener('click', () => {
@@ -76,3 +74,4 @@ function getRandomSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
+
