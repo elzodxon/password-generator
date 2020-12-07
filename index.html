@@ -11,49 +11,61 @@
 <body>
 
 <!-- INSERT HTML HERE -->
+<header>
+    <img src="img/logo.png" alt="" width="352" height="38">
+</header>
+
 <div class="container">
-    <h2 style="color: #615D8F; text-align: left ">Password Generator</h2>
-    <div class="result-container">
-        <span id="result"></span>
-        <button class="btn" id="clipboard">
-            Copy
+    <div class="wrapper">
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                Copy
+            </button>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Generate password
         </button>
+        <hr width="450px">
+
+        <div class="settings">
+            <div class="setting-left">
+                <h2 style="text-align: left; text-transform: uppercase; color: #5D658F; font-size: 18px; font-weight: 600">
+                    Preferences</h2>
+                <div class="setting" style="width: 50%">
+                    <label style="font-size: 17px; font-weight: 700">Length</label>
+                    <span style="padding: 0px 13px">|</span>
+                    <input type="number" id="length" min='8' max='15' value='8'
+                           style="text-align: center; font-size: 18px; font-weight: 700; color: #615D8F; width: 58px; height: 34px; background: #C4C4C4;border: none; outline: none; border-radius: 3px; "/>
+                </div>
+                <label class="setting">
+                    <input class="setting-input" type="checkbox" id="uppercase" checked/>
+                    <span>Uppercase alphabets</span>
+                </label>
+                <label class="setting">
+                    <input class="setting-input" type="checkbox" id="lowercase"/>
+                    <span>Lowercase alphabets</span>
+                </label>
+                <label class="setting" id="numbers">
+                    <input class="setting-input" type="checkbox"/>
+                    <span>Numbers</span>
+                </label>
+                <label class="setting">
+                    <input class="setting-input" type="checkbox" id="symbols"/>
+                    <span>Symbols</span>
+                </label>
+            </div>
+
+            <div class="settings-right">
+                <img src="img/dog.png" alt="" style="    position: relative;
+    top: 90px; right: -100px">
+            </div>
+        </div>
+        <hr width="450px">
     </div>
-    <button class="btn btn-large" id="generate">
-        Generate password
-    </button>
-
-    <hr>
-
-    <div class="settings">
-        <h2 style="text-align: left; text-transform: uppercase; color: #5D658F">Preferences</h2>
-        <div class="setting" style="width: 50%">
-            <label>Length</label> |
-            <input type="number" id="length" min='8' max='32' value='20' />
-        </div>
-        <div class="setting">
-            <label>Uppercase alphabets</label>
-            <input type="checkbox" id="uppercase" checked />
-        </div>
-        <div class="setting">
-            <label>Lower case alphabets</label>
-            <input type="checkbox" id="lowercase" checked />
-        </div>
-        <div class="setting">
-            <label>Numbers</label>
-            <input type="checkbox" id="numbers"  />
-        </div>
-        <div class="setting">
-            <label>Symbols</label>
-            <input type="checkbox" id="symbols"  />
-        </div>
-    </div>
-    <hr>
-
 
 </div>
-
-
 
 
 <script src="main.js"></script>
