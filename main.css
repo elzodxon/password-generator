@@ -206,6 +206,22 @@ label{
         font-size: 14px;
     }
 }
+@media screen and (max-width: 580px) {
+    .result-container{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .clip{
+        right: 20px !important;
+    }
+    hr{
+        display: none;
+    }
+    .settings-right__img{
+        right: -10px !important;
+    }
+}
 
 .clip::after {
     display: none;
