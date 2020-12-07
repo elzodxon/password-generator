@@ -156,8 +156,8 @@ h2 {
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
-    border: 1px solid gray;
-    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+    border-radius: 7px;
     outline: none;
     transition-duration: 0.3s;
     background-color: white;
