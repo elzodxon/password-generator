@@ -26,8 +26,17 @@ clipboard.addEventListener('click', () => {
     textarea.remove();
 });
 
+
 generate.addEventListener('click', () => {
     const length = +lengthEl.value;
+
+    if (length < 8) {
+        alert('Minimum 8raqamini kiritishingiz mumkin')
+        return
+    } else if (length > 15){
+        alert('Maxium 15gacha kiritishingiz mumkin')
+        return
+    }
     const hasLower = lowercaseEl.checked;
     const hasUpper = uppercaseEl.checked;
     const hasNumber = numbersEl.checked;
